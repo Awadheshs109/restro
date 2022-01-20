@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>A simple, clean, and responsive HTML invoice template</title>
+    <link rel="stylesheet" href="invoice.css" />
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td class="title">
+                                <img src="logo.png" style="width: 100%; max-width: 300px" />
+                            </td>
+
+                            <td>
+                                Invoice #: 123<br />
+                                <p>Billing Date: <br> <span id='date'></span>.</p>
+                                <script>
+                                    n = new Date();
+                                    y = n.getFullYear();
+                                    m = n.getMonth() + 1;
+                                    d = n.getDate();
+                                    document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+                                </script>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr class="information">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td>
+                                Customer Adress <br /> -------------------<br />-------------------
+                            </td>
+
+                            <td>
+                                Customer Adress <br /> -------------------<br /> Customer Email Id
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+
+            <tr class="heading">
+                <td>Item</td>
+
+                <td>Price</td>
+            </tr>
+
+            <tr>
+                <td>Burger</td>
+
+                <td>₹60.00 </td>
+            </tr>
+
+            <tr>
+                <td>France Fried</td>
+                <td> ₹60.00</td>
+            </tr>
+
+            <tr class="item last">
+                <td>Milkshake</td>
+
+                <td> ₹80.00</td>
+
+            </tr>
+
+            <tr class="total">
+                <td></td>
+
+                <td>Total: ₹200.00</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <div class="center">
+
+            <a href="thank_you.jpg">
+                <button class="center" type="Exit" value="Exit">Exit</button>
+            </a>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
