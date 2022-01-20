@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <link rel="stylesheet" type="text/css" href="man.css" />
+    <script type="text/javascript" src="resturant.js"></script>
+</head>
+
+<body>
+
+
+
+    <nav class="nav-bar">
+        <div class="logo" style="text-align: center;">
+
+            <img src="logo.png" width="400px" height="150px">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <a href="index.html">
+                    <li>Home
+
+                </a>
+                </li>
+
+                <a class="active" href="login.html">
+                    <li>Admin
+
+                </a>
+                </li>
+                <a href="registration-form.html">
+                    <li>User Registration
+
+                </a>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </nav>
+
+    <h2>Login Page </h2>
+    <table>
+
+        <tr>
+            <td>
+                User Id
+            </td>
+            <td>
+                <input type="text" name="text" id="user" onfocusout="checkuser()" required placeholder="Enter User Id">
+                <span id="usererror" style="color: chartreuse;"></span>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password
+            </td>
+            <td>
+
+                <input type="text" name="name" id="password" onfocusout="checkpassword()" placeholder="Enter a password" required>
+                <span id="passworderror" style="color: chartreuse;"></span>
+            </td>
+        </tr>
+    </table>
+    <div id="footer">
+
+        <form action="menu.html">
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Reset">Reset</button>
+        </form>
+    </div>
+    <footer>
+        <p class="about"><a href="/"><i class="fa fa-home"></i> Home</a> | <a href="//www.html.am/privacy_policy.cfm">Privacy Policy</a>
+        </p>
+        <p>© Copyright 2010 - 2022</p>
+    </footer>
+</body>
+
+</html>
