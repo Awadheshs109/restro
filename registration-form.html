@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <script type="text/javascript" src="resturant.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="man.css" />
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo" style="text-align: center;">
+
+            <img src="logo.png" width="400px" height="150px">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <a href="index.html">
+                    <li>Home
+
+                </a>
+                </li>
+
+                <a href="login.html">
+                    <li>Admin
+
+                </a>
+                </li>
+                <a class="active" href="registration-form.html">
+                    <li>User Registration
+
+                </a>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+        <h2>Registration </h2>
+        <table>
+
+            <tr>
+                <td>
+                    Customer Id
+                </td>
+                <td>
+                    <input type="text" name="text" id="user" onfocusout="checkuser()" required placeholder="Enter Customer id">
+                    <span id="usererror" style="color: chartreuse;"></span>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+
+                    <input type="text" name="name" id="name" onfocusout="checkname()" placeholder="Name" required>
+                    <span id="nameerror" style="color: chartreuse;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mobile No.
+                </td>
+                <td>
+                    <input type="text" name="text" id="mobile" onfocusout="checkMobile()" required placeholder="Enter Mobile Number">
+                    <span id="mobileerror" style="color: chartreuse;"></span>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email Id
+                </td>
+                <td>
+                    <input type="text" id="email" name="email" onfocusout="checkemail()" required placeholder="Email">
+                    <span id="emailerror" style="color: chartreuse;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address
+                </td>
+                <td>
+
+                    <textarea rows="3" cols="21" required placeholder="Enter your Address"></textarea>
+                </td>
+            </tr>
+        </table>
+        <div id="footer">
+            <form action="products.html">
+                <button type="submit" value="Submit">Submit</button>
+
+                <button type="reset" value="Reset">Reset</button>
+            </form>
+        </div>
+        <footer>
+            <p class="about"><a href="/"><i class="fa fa-home"></i> Home</a> | <a href="//www.html.am/privacy_policy.cfm">Privacy Policy</a>
+            </p>
+            <p>© Copyright 2010 - 2022</p>
+        </footer>
+</body>
+
+</html>
